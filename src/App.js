@@ -68,9 +68,6 @@ function App() {
     setType()
   }
 
-
-  
-
   return (
     <>
     <div ref={myRef} className='h-screen'>
@@ -81,7 +78,6 @@ function App() {
 {form ? (<div className="h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space items-center">
 
 <div className=" max-w-sm basis-1/2 text-center">
-      {/* <h1 className='text-white text-6xl '>Minefy</h1> */}
       <img src={img1} alt='Minefy' className=' rounded-3xl'></img>
   </div>
   <div className='text-3xl text-white basis-1/2 text-center'>
@@ -107,21 +103,11 @@ function App() {
     
 </div>):(<div className="h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space items-center">
       <div className="md:w-1/3 max-w-sm">
-          {/* <h1 className='text-white text-6xl '>Minefy</h1> */}
       </div>
-    type === 'employee' ? (<div className="md:w-1/3 max-w-sm">
+    type === 'employee' (<div className="md:w-1/3 max-w-sm">
         <div className="text-center md:text-left">        
         </div>
-        <button
-            type="button"
-            className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-xl px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2" onClick={() => open()}
-          >
-            <img src={mm} alt="" className="h-16" />
-            Connect to metamask
-          </button>
-          <button onClick={clearSt} className='underline text-xl text-white px-4 mt-5 rounded-xl'>
-        &lt; Back
-          </button>
+
 
 
       </div>):(<div>
@@ -168,11 +154,9 @@ function App() {
           <a className="text-blue-600 hover:text-blue-700 hover:underline hover:underline-offset-4" href="#">Forgot Password?</a>
         </div>
         <div className="text-center md:text-left">
-          <button className="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white uppercase rounded text-xs tracking-wider" type="submit">Login</button>
+          <button className="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white uppercase rounded text-xs tracking-wider" type="submit">Signup</button>
         </div>
-        <div className="mt-4 font-semibold text-sm text-slate-500 text-center md:text-left">
-          Don't have an account? <a className="text-red-600 hover:underline hover:underline-offset-4" href="#">Signup</a>
-        </div>
+        
         <button onClick={clearSt} className='underline text-xl text-white px-4 mt-5 rounded-xl'>
         &lt; Back
           </button>
